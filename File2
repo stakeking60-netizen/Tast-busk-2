@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Task Busk 3</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <button onclick="showSection('tasks')">🧾 Tasks</button>
+    <button onclick="showSection('wallet')">💰 Wallet</button>
+    <button onclick="showSection('profile')">👤 Profile</button>
+    <button onclick="showSection('stats')">📊 Stats</button>
+  </nav>
+
+  <main>
+    <!-- TASKS -->
+    <section id="tasks" class="page active">
+      <h2>Available Tasks</h2>
+      <div id="taskList"></div>
+    </section>
+
+    <!-- WALLET -->
+    <section id="wallet" class="page">
+      <h2>Your Wallet</h2>
+      <p>Total Balance: ₹<span id="walletBalance">0</span></p>
+      <button onclick="withdraw()">Withdraw</button>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="page">
+      <h2>Your Profile</h2>
+      <p>Name: <span id="username">User123</span></p>
+      <p>Email: <span id="useremail">user@email.com</span></p>
+    </section>
+
+    <!-- STATISTICS -->
+    <section id="stats" class="page">
+      <h2>Statistics</h2>
+      <p>Tasks Completed: <span id="completedCount">0</span></p>
+      <p>Total Earned: ₹<span id="totalEarned">0</span></p>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
