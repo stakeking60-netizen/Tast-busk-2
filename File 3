@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Task Busk 3</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <section class="admin">
+    <h1>Admin Panel</h1>
+    <input type="password" id="adminPass" placeholder="Enter Admin Password" />
+    <button onclick="adminLogin()">Login</button>
+
+    <div id="adminPanel" class="hidden">
+      <h3>Add New Task</h3>
+      <input type="text" id="taskTitle" placeholder="Task Title" />
+      <input type="text" id="taskReward" placeholder="Reward (₹)" />
+      <input type="text" id="taskLink" placeholder="Task Link" />
+      <button onclick="addTask()">Add Task</button>
+      <div id="taskContainer"></div>
+    </div>
+  </section>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
